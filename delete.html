@@ -215,7 +215,7 @@
 <body>
 
 <header>
-  <div class="header-eyebrow">Calculadora Penal · V Forttes Software Engineer</div>
+  <div class="header-eyebrow">Calculadora Penal · V Forttes Software Engineering</div>
   <div class="header-title">EXCLUSÃO DE DADOS</div>
   <div class="header-subtitle">Como solicitar a exclusão da sua conta e dados</div>
 </header>
@@ -223,7 +223,7 @@
 <main>
 
   <div class="summary-box">
-    <p><strong>Resumo:</strong> como todos os seus dados ficam salvos localmente no seu dispositivo, você pode excluí-los a qualquer momento diretamente pelo app, sem precisar entrar em contato conosco. Caso prefira, também pode enviar uma solicitação por e-mail.</p>
+    <p><strong>Resumo:</strong> você pode excluir sua conta e todos os seus dados diretamente pelo app, em uma única ação, sem precisar entrar em contato conosco. Caso prefira, também pode enviar uma solicitação por e-mail.</p>
   </div>
 
   <!-- 1 -->
@@ -243,7 +243,7 @@
       <div class="step-number">2</div>
       <div class="step-text">
         <p><strong>Excluir conta e dados</strong></p>
-        <p>Toque em <strong>Excluir conta e dados</strong> e confirme nas duas telas de aviso. Essa ação apaga imediatamente o perfil (nome, OAB, e-mail, foto), o histórico de cálculos, as preferências salvas e desconecta sua conta Google — tudo em uma única etapa.</p>
+        <p>Toque em <strong>Excluir conta e dados</strong> e confirme nas duas telas de aviso. Essa ação apaga imediatamente o perfil (nome, OAB, e-mail, foto) e o histórico de cálculos salvos no dispositivo, além de encerrar e excluir sua conta de autenticação no Firebase (Google, Apple ou e-mail/senha, conforme o método usado) — tudo em uma única etapa.</p>
       </div>
     </div>
 
@@ -262,7 +262,7 @@
     <p>Se preferir enviar uma solicitação formal, entre em contato pelo e-mail abaixo informando:</p>
     <ul>
       <li>Nome completo cadastrado no app</li>
-      <li>E-mail vinculado à conta Google (se utilizou login com Google)</li>
+      <li>E-mail vinculado à conta (Google, Apple ou e-mail/senha)</li>
       <li>Solicitação de exclusão de dados</li>
     </ul>
 
@@ -283,7 +283,7 @@
         <th>Como excluir</th>
       </tr>
       <tr>
-        <td>Nome, OAB e e-mail</td>
+        <td>Nome, OAB e e-mail (perfil)</td>
         <td>Dispositivo (local)</td>
         <td>Configurações → Excluir conta e dados</td>
       </tr>
@@ -298,7 +298,12 @@
         <td>Configurações → Excluir conta e dados</td>
       </tr>
       <tr>
-        <td>Sessão da conta Google</td>
+        <td>Conta de login (UID, e-mail)</td>
+        <td>Firebase Authentication (Google)</td>
+        <td>Configurações → Excluir conta e dados</td>
+      </tr>
+      <tr>
+        <td>Sessão do Google ou da Apple</td>
         <td>Dispositivo (local)</td>
         <td>Configurações → Excluir conta e dados (desconecta automaticamente)</td>
       </tr>
@@ -306,7 +311,7 @@
 
     <div class="highlight">
       <div class="badge green">Importante</div>
-      <p>Nenhum dado é armazenado em servidores externos. Toda exclusão é imediata e irreversível.</p>
+      <p>A exclusão pelo app é imediata e irreversível.</p>
     </div>
   </section>
 
@@ -315,14 +320,18 @@
     <h2>4. Dados que podem ser mantidos</h2>
     <div class="highlight">
       <div class="badge">Observação</div>
-      <p>Não mantemos nenhuma cópia dos seus dados em servidores. Após a desinstalação do app ou reset dos dados, nenhuma informação pessoal é retida por nossa parte.</p>
+      <p>O status da sua assinatura e o histórico de cobrança continuam registrados pela Apple (App Store) ou pelo Google (Google Play), conforme a plataforma usada para assinar — esses registros seguem as políticas de retenção da própria Apple/Google e não são apagados por nós, já que não os armazenamos. Excluir sua conta no app <strong>não cancela automaticamente</strong> uma assinatura ativa; para cancelar a cobrança recorrente, veja as instruções nos <a href="terms.html">Termos de Uso</a>.</p>
+    </div>
+    <div class="highlight">
+      <div class="badge">Observação</div>
+      <p>Após a exclusão da conta e dos dados locais, não retemos nenhuma cópia das suas informações pessoais.</p>
     </div>
   </section>
 
 </main>
 
 <footer>
-  <p>© 2026 V Forttes Software Engineer</p>
+  <p>© 2026 V Forttes Software Engineering</p>
   <p>Calculadora Penal — Todos os direitos reservados</p>
 </footer>
 
