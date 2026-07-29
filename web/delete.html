@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exclusão de Dados - Calculadora Penal</title>
+<style>
+  :root { --ink:#1c1c1e; --muted:#5b5b60; --line:#e6e6e9; --accent:#8a2b2b; --bg:#faf9f7; }
+  * { box-sizing: border-box; }
+  body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; background:var(--bg); color:var(--ink); line-height:1.6; }
+  .wrap { max-width:760px; margin:0 auto; padding:48px 24px 80px; }
+  header.top { text-align:center; margin-bottom:8px; }
+  .eyebrow { font-size:12px; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); }
+  h1 { font-size:26px; margin:8px 0 4px; }
+  .summary { background:#fff; border:1px solid var(--line); border-left:4px solid var(--accent); border-radius:8px; padding:16px 20px; margin:24px 0 32px; font-size:15px; }
+  h2 { font-size:19px; margin-top:36px; border-bottom:1px solid var(--line); padding-bottom:8px; }
+  .step { display:flex; gap:14px; margin:16px 0; }
+  .step .num { flex:0 0 auto; width:28px; height:28px; border-radius:50%; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; font-size:14px; font-weight:600; }
+  .step h3 { margin:0 0 4px; font-size:16px; }
+  .step p { margin:0; }
+  table { width:100%; border-collapse:collapse; margin-top:16px; font-size:14px; }
+  th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; }
+  th { background:#f1efec; }
+  .note { background:#fff; border:1px solid var(--line); border-radius:8px; padding:14px 18px; margin-top:16px; font-size:14px; }
+  a { color:var(--accent); }
+  footer { margin-top:56px; padding-top:20px; border-top:1px solid var(--line); font-size:13px; color:var(--muted); text-align:center; }
+  footer a { color:var(--muted); margin:0 6px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="eyebrow">Calculadora Penal · V Forttes Software Engineering</div>
+    <h1>Exclusão de Dados</h1>
+  </header>
+
+  <div class="summary">
+    <strong>Resumo:</strong> seus dados de perfil e histórico ficam salvos localmente no seu dispositivo, e você pode excluí-los a qualquer momento diretamente pelo app. A exclusão pelo app também remove sua conta de login (Firebase Authentication). Caso prefira, também pode enviar uma solicitação por e-mail.
+  </div>
+
+  <h2>1. Excluir dados diretamente pelo app</h2>
+  <div class="step">
+    <div class="num">1</div>
+    <div><h3>Abrir Configurações</h3><p>No aplicativo, acesse a aba <strong>Configurações</strong> e role até a seção <strong>Zona de risco</strong>.</p></div>
+  </div>
+  <div class="step">
+    <div class="num">2</div>
+    <div><h3>Excluir conta e dados</h3><p>Toque em <strong>Excluir conta e dados</strong> e confirme nas duas telas de aviso. Essa ação apaga imediatamente o perfil (nome, OAB, e-mail, foto), o histórico de cálculos, as preferências salvas, e exclui sua conta de login no Firebase Authentication (Google, Apple ou e-mail/senha) — tudo em uma única etapa.</p></div>
+  </div>
+  <div class="step">
+    <div class="num">3</div>
+    <div><h3>Desinstalar o app (opcional)</h3><p>Desinstalar o aplicativo também remove qualquer dado eventualmente remanescente no dispositivo.</p></div>
+  </div>
+
+  <h2>2. Solicitar exclusão por e-mail</h2>
+  <p>Se preferir enviar uma solicitação formal, entre em contato pelo e-mail abaixo informando:</p>
+  <ul>
+    <li>Nome completo cadastrado no app</li>
+    <li>E-mail vinculado à conta (Google, Apple ou e-mail/senha)</li>
+    <li>Solicitação de exclusão de dados</li>
+  </ul>
+  <p>Envie sua solicitação para: <a href="mailto:support@vforttes.com">support@vforttes.com</a></p>
+  <p>Prazo de resposta: até <strong>7 dias úteis</strong></p>
+
+  <h2>3. Quais dados são excluídos</h2>
+  <table>
+    <tr><th>Dado</th><th>Onde fica salvo</th><th>Como excluir</th></tr>
+    <tr><td>Nome, OAB e e-mail</td><td>Dispositivo (local)</td><td>Configurações → Excluir conta e dados</td></tr>
+    <tr><td>Foto de perfil</td><td>Dispositivo (local)</td><td>Configurações → Excluir conta e dados</td></tr>
+    <tr><td>Histórico de cálculos</td><td>Dispositivo (local)</td><td>Configurações → Excluir conta e dados</td></tr>
+    <tr><td>Conta de login (UID, e-mail, provedor)</td><td>Firebase Authentication</td><td>Configurações → Excluir conta e dados (exclui automaticamente)</td></tr>
+    <tr><td>Status de assinatura</td><td>RevenueCat</td><td>Encerrado ao cancelar a assinatura na loja (App Store/Google Play); o identificador é removido junto com a conta</td></tr>
+  </table>
+
+  <div class="note">
+    A exclusão dos dados locais e da conta de login é imediata e irreversível. Registros de assinatura podem ser mantidos pela Apple, Google ou RevenueCat pelo prazo exigido por obrigações legais e fiscais de cada um deles.
+  </div>
+
+  <footer>
+    © 2026 V Forttes Software Engineering — Calculadora Penal. Todos os direitos reservados.<br>
+    <a href="/privacy">Política de Privacidade</a> · <a href="/terms">Termos de Uso</a> · <a href="/support">Suporte</a>
+  </footer>
+</div>
+</body>
+</html>
